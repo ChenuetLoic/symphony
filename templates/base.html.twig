@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="/build/css/app.css">
-        <script src="/build/app.js"></script>
-        {% block stylesheets %}{{ encore_entry_link_tags('app') }}{% endblock %}
-        <title>{% block title %}Welcome!{% endblock %}</title>
-    </head>
-    <header>
-        {% block header %}{% include '_navbar.html.twig' %}{% endblock %}
-    </header>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{{ encore_entry_script_tags('app') }}{% endblock %}
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="{{ asset('build/Superman.png') }}" />
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
+</head>
+<body>
+{% block header %} {% include '_navbar.html.twig' %} {% endblock %}
+{% block body %}{% endblock %}
+{% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+{% endblock %}
+</body>
 </html>

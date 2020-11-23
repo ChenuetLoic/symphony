@@ -1,9 +1,12 @@
+@import '~bootstrap/scss/bootstrap';
+
+
 body {
-    background-color: blue;
+    background-color: #0000ff;
 }
+
 $theme-colors: (
         "primary": #0074d9,
         "danger": #ff4136
 );
 
-@import '~bootstrap/scss/bootstrap';
