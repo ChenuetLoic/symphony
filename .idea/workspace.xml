@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66a281b3-a916-448e-97cb-c8966b6f8bc4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Program.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/CategoryRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/ProgramRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Program.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Program.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +172,7 @@
       <workItem from="1606476094219" duration="1331000" />
       <workItem from="1606486171957" duration="64000" />
       <workItem from="1606764040119" duration="741000" />
-      <workItem from="1606765601845" duration="974000" />
+      <workItem from="1606765601845" duration="1279000" />
     </task>
     <servers />
   </component>

@@ -1004,10 +1004,24 @@ SELECT|sys.sys_config:null
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <key id="308" parent="296" name="PRIMARY">
+    <column id="308" parent="296" name="category_id">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="309" parent="296" name="IDX_92ED778412469DE2">
+      <ColNames>category_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="310" parent="296" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
+    <foreign-key id="311" parent="296" name="FK_92ED778412469DE2">
+      <ColNames>category_id</ColNames>
+      <RefTableName>category</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
   </database-model>
 </dataSource>
