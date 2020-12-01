@@ -1,5 +1,5 @@
 <?php
-// src/Controller/ProgramController.php
+
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -17,5 +17,4 @@ class DefaultController extends AbstractController
             'message' => 'Bienvenue!',
         ]);
     }
-
 }

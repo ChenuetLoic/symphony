@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66a281b3-a916-448e-97cb-c8966b6f8bc4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Entity/Program.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Program.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/CategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/category/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/category/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ProgramController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProgramController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/_navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_navbar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/program/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/program/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/program/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/program/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +187,10 @@
       <workItem from="1606476094219" duration="1331000" />
       <workItem from="1606486171957" duration="64000" />
       <workItem from="1606764040119" duration="741000" />
-      <workItem from="1606765601845" duration="1279000" />
+      <workItem from="1606765601845" duration="3814000" />
+      <workItem from="1606808281001" duration="3934000" />
+      <workItem from="1606814731153" duration="99000" />
+      <workItem from="1606818022512" duration="9838000" />
     </task>
     <servers />
   </component>
@@ -199,6 +217,14 @@
       <screen x="0" y="27" width="1920" height="985" />
     </state>
     <state x="733" y="398" width="444" height="249" key="#Composer/0.27.1920.985@0.27.1920.985" timestamp="1606129369074" />
+    <state x="847" y="356" width="527" height="333" key="#File_Watchers" timestamp="1606836216150">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="847" y="356" width="527" height="333" key="#File_Watchers/0.27.1920.985@0.27.1920.985" timestamp="1606836216150" />
+    <state x="653" y="344" width="604" height="357" key="#Notifications" timestamp="1606836393963">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="653" y="344" width="604" height="357" key="#Notifications/0.27.1920.985@0.27.1920.985" timestamp="1606836393963" />
     <state x="555" y="181" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606765611787">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
@@ -207,6 +233,10 @@
       <screen x="0" y="27" width="1920" height="985" />
     </state>
     <state x="652" y="325" width="595" height="403" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.985@0.27.1920.985" timestamp="1606467775587" />
+    <state x="693" y="277" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606819487809">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="693" y="277" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1920.985@0.27.1920.985" timestamp="1606819487809" />
     <state x="595" y="297" width="719" height="452" key="EditFileWatcherDialog" timestamp="1606765485450">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
@@ -219,6 +249,10 @@
       <screen x="0" y="27" width="1920" height="985" />
     </state>
     <state width="263" height="500" key="HiddenNamespacesPopup/0.27.1920.985@0.27.1920.985" timestamp="1606765835886" />
+    <state x="590" y="239" width="729" height="568" key="NewPhpClassDialog" timestamp="1606818685718">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="590" y="239" width="729" height="568" key="NewPhpClassDialog/0.27.1920.985@0.27.1920.985" timestamp="1606818685718" />
     <state x="849" y="409" width="367" height="262" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1606475577259">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
@@ -239,5 +273,13 @@
       <screen x="0" y="27" width="1920" height="985" />
     </state>
     <state x="805" y="391" width="299" height="263" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.27.1920.985@0.27.1920.985" timestamp="1606469814031" />
+    <state x="100" y="127" width="1720" height="785" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1606809440613">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="100" y="127" width="1720" height="785" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.27.1920.985@0.27.1920.985" timestamp="1606809440613" />
+    <state x="0" y="220" width="1515" height="792" key="dock-window-1" timestamp="1606835826827">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="0" y="220" width="1515" height="792" key="dock-window-1/0.27.1920.985@0.27.1920.985" timestamp="1606835826827" />
   </component>
 </project>

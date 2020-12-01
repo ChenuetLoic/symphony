@@ -1,14 +1,15 @@
-@import '~bootstrap/scss/bootstrap';
-
-
-body {
-    background-color: #000082;
-}
-
 $theme-colors: (
-        "primary": #0074d9,
-        "danger": #ff4136
+        "primary": #080665,
+        "secondary": #e7e7e7ff
 );
 
+body {
+  padding-top: 60px;
+}
 
+h2 {
+  margin: 8px;
+}
+
+@import "~bootstrap/scss/bootstrap";
 
