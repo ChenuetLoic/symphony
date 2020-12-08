@@ -42,7 +42,7 @@ class CategoryController extends AbstractController
             ->findOneBy(['name' => $categoryName]);
         $programs = $this->getDoctrine()
             ->getRepository(Program::class)
-            ->findBy(['category' => $category], ['id' => 'DESC'], 3);
+            ->findBy(['category' => $category]);
 
         if(!$programs) {
             throw $this->createNotFoundException(

@@ -2,7 +2,9 @@
 // src/Controller/ProgramController.php
 namespace App\Controller;
 
+use App\Entity\Episode;
 use App\Entity\Program;
+use App\Entity\Season;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -28,25 +30,44 @@ class ProgramController extends AbstractController
     }
 
     /**
-     * Getting a program by id
-     *
-     * @Route("/show/{id<^[0-9]+$>}", name="show")
+     * @Route("/programs/{id}", name="show")
+     * @param Program $program
      * @return Response
      */
-    public function show(int $id): Response
+
+    public function show(Program $program): Response
     {
-        $program = $this ->getDoctrine()
-            ->getRepository(Program::class)
-            ->findOneBy(['id' => $id]);
+        return $this->render('program/show.html.twig', ['program'=>$program]);
+    }
 
-
-        if(!$program) {
-            throw $this->createNotFoundException(
-                'No program with id : ' .$id. 'found un program\'s table.'
-            );
-        }
-        return $this->render('program/show.html.twig', [
+    /**
+     * @Route ("program/{program}/seasons/{season}", name="showSeason")
+     * @param Season $season
+     * @param Program $program
+     * @return Response
+     */
+    public function showSeason(Season $season, Program $program): Response
+    {
+        return $this->render("program/season_show.html.twig", [
             'program' => $program,
+            'season' => $season,
         ]);
     }
+
+    /**
+     * @Route ("/programs/{program}/seasons/{season}/episode/{episode}", name="showEpisode")
+     * @param Season $season
+     * @param Program $program
+     * @param Episode $episode
+     * @return Response
+     */
+    public function showEpisode(Season $season, Program $program, Episode $episode): Response
+    {
+        return $this->render("program/episode_show.html.twig", [
+            'program' => $program,
+            'episodes' => $episode,
+            'season' => $season,
+        ]);
+    }
+
 }

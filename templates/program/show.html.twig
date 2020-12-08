@@ -1,18 +1,30 @@
-{# templates/program/show.html.twig #}
 {% extends 'base.html.twig' %}
-{% block title %}Série #{{ program.id }}{% endblock %}
-
+{% block title %}Program #{{ program.id }}{% endblock %}
 {% block body %}
-
-    <div class="media">
-        <img class="align-self-start mr-3" src="{{program.poster}}" alt="{{ program.title }} poster">
-        <div class="media-body">
-            <h1 class="mt-0">{{ program.title }}</h1>
-            <p>{{ program.summary }}</p>
-            <p>Catégorie : {{ program.category.name }}</p>
+    <div class="container-fluid ml-2">
+        <div class="media">
+            <img class="align-self-start mr-3" src="{{program.poster}}" alt="{{ program.title }} poster">
+            <div class="media-body">
+                <h1 class="mt-0">{{ program.title }}</h1>
+                <p class="w-75">{{ program.synopsis }}</p>
+                <p>Category : {{ program.category.name }}</p>
+                <p>Saison disponible : </p>
+                <ul>
+                    {% for season in program.seasons %}
+                    <li>
+                        <a href="{{ path("program_showSeason", { program: program.id , season: season.id }) }}">
+                            Saison {{ season.number }}
+                        </a>
+                        <p>{{ season.description }}</p>
+                    {% else %}
+                        No season found
+                    {% endfor %}
+                    </li>
+                </ul>
+            </div>
         </div>
+        <a class="btn btn-dark m-2" href="{{ path('program_index') }}">
+            Retour a la liste des séries
+        </a>
     </div>
-
-    <a class="btn btn-dark m-2"  href="{{ path('program_index') }}">Retour à la liste des programmes</a>
-
 {% endblock %}

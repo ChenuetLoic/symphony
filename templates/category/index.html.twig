@@ -4,7 +4,6 @@
     <h1>Toutes les catégories : </h1>
     {% for category in categories %}
         <div>
-
             <a href="{{ path("category_show", { categoryName: category.name }) }}"><h2>{{ loop.index }} . {{ category.name }}</h2></a>
         </div>
     {% else %}
