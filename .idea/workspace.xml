@@ -2,27 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66a281b3-a916-448e-97cb-c8966b6f8bc4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201202103133.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Episode.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Season.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/EpisodeRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/SeasonRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/program/episode_show.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/program/season_show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fb8279da-ed96-4b81-84c9-3727daa01d81.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fb8279da-ed96-4b81-84c9-3727daa01d81.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/CategoryType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/ProgramType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/category/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/program/new.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201130195722.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201130200500.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20201201202948.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201130200851.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ProgramController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProgramController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Program.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Program.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/category/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/category/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/program/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/program/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/program/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/program/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,6 +189,7 @@
       <workItem from="1606895871677" duration="11549000" />
       <workItem from="1606981927622" duration="16428000" />
       <workItem from="1607335622036" duration="8170000" />
+      <workItem from="1607413733539" duration="4422000" />
     </task>
     <servers />
   </component>
