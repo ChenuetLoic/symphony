@@ -22,9 +22,17 @@
                     </li>
                 </ul>
             </div>
+            <div class="media">
+                <strong>Acteurs :</strong>
+                <ul>
+                    {% for actor in program.actors %}
+                        <li>{{ actor.name }} </li>
+                    {% else %}
+                        <li>Aucun acteur pour cette série</li>
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
-        <a class="btn btn-dark m-2" href="{{ path('program_index') }}">
-            Retour a la liste des séries
-        </a>
+        <a class="btn btn-dark m-2" href="{{ path('program_index') }}">Retour a la liste des séries</a>
     </div>
 {% endblock %}
