@@ -54,7 +54,7 @@ class Program
     private $category;
 
     /**
-     * @ORM\Column(type="text")
+     * @ORM\Column(type="text", nullable=false)
      */
     private $synopsis;
 
