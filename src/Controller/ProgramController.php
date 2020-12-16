@@ -6,6 +6,7 @@ use App\Entity\Episode;
 use App\Entity\Program;
 use App\Entity\Season;
 use App\Form\ProgramType;
+use App\Service\Slugify;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -24,29 +25,22 @@ class ProgramController extends AbstractController
      *
      * @Route("/new", name="new")
      * @param Request $request
+     * @param Slugify $slugify
      * @return Response
      */
-    public function new(Request $request) : Response
+    public function new(Request $request, Slugify $slugify) : Response
     {
-        // Create a new Category Object
         $program = new Program();
-        // Create the associated Form
         $form = $this->createForm(ProgramType::class, $program);
-        // Get data from HTTP request
         $form->handleRequest($request);
-        // Was the form submitted ?
         if ($form->isSubmitted() && $form->isValid()) {
-            // Deal with the submitted data
-            // Get the Entity Manager
             $entityManager = $this->getDoctrine()->getManager();
-            // Persist Category Object
+            $slug = $slugify->generate($program->getTitle());
+            $program->setSlug($slug);
             $entityManager->persist($program);
-            // Flush the persisted object
             $entityManager->flush();
-            // Finally redirect to categories list
             return $this->redirectToRoute('program_index');
         }
-        // Render the form
         return $this->render('program/new.html.twig', [
             "form" => $form->createView(),
         ]);
@@ -67,7 +61,7 @@ class ProgramController extends AbstractController
     }
 
     /**
-     * @Route("/programs/{id}", name="show")
+     * @Route("/{slug}", name="show")
      * @param Program $program
      * @return Response
      */
@@ -92,7 +86,7 @@ class ProgramController extends AbstractController
     }
 
     /**
-     * @Route ("/programs/{program}/seasons/{season}/episode/{episode}", name="showEpisode")
+     * @Route ("/{program}/seasons/{season}/episode/{episode}", name="showEpisode")
      * @param Season $season
      * @param Program $program
      * @param Episode $episode

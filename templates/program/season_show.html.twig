@@ -11,11 +11,15 @@
         <h2>Liste des épisodes</h2>
         <ul>
             {% for episode in season.episodes %}
-                <li><a href="{{ path("program_showEpisode", { program: program.id , season: season.id, episode: episode.id }) }}">Episode {{ episode.number }} : {{ episode.title }}</a></li>
+                <li>
+                    <a href="{{ path("program_showEpisode", { program: program.id , season: season.id,
+                        episode: episode.id }) }}">Episode {{ episode.number }}
+                        : {{ episode.title }}</a></li>
             {% else %}
-                No episode found
+                <p>Il n'y a pas d'épisode</p>
             {% endfor %}
         </ul>
-        <a class="btn btn-dark m-2" href="{{ path("program_show", { id: program.id }) }}">Retour à la liste des saisons</a>
+        <a class="btn btn-dark m-2" href="{{ path("program_show", { slug: program.slug }) }}">Retour à la liste des
+            saisons</a>
     </div>
 {% endblock %}
