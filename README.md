@@ -28,3 +28,6 @@ https://www.loom.com/share/2a99df9ef5f94d0eb8b2ecf08c1897d4
 
 Quêtes 18
 https://www.loom.com/share/b8ad2429086d4306a79b74948b2409ef
+
+Quêtes 19
+https://www.loom.com/share/f3c6022065c442e29132555da998be0c

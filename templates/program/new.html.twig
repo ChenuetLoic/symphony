@@ -1,8 +1,23 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
-    {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <input type='submit' value='Add program'>
-    {{ form_end(form) }}
+    {% form_theme form 'bootstrap_4_layout.html.twig' %}
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="text-primary">Ajouter un nouveau programme</h1>
+            </div>
+            <div class="col-8 offset-2">
+                {{ form_start(form) }}
+                {{ form_widget(form) }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8 offset-2">
+                <input class="btn btn-dark m-2" type='submit' value='Add program'>
+                {{ form_end(form) }}
+            </div>
+        </div>
+    </div>
+    </div>
 {% endblock %}
