@@ -3,40 +3,24 @@
         <a class="navbar-brand d-none d-lg-block" href="/">Wild Series</a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto ">
-                <li class="nav-item dropdown mr-5">
-                    <a class="nav-link dropdown-toggle text-light" href="/categories/" id="navbarDropdownMenuLink"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Catégories
-                    </a>
-                    <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Catégorie 1</a>
-                        <a class="dropdown-item" href="#">Catégorie 2</a>
-                        <a class="dropdown-item" href="#">Catégorie 3</a>
-                    </div>
+                <li class="nav-item mr-5">
+                    <a class="nav-link text-light" href="/categories/">Catégories</a>
                 </li>
                 <li class="nav-item dropdown mr-5">
-                    <a class="nav-link dropdown-toggle text-light" href="/programs/" id="navbarDropdownMenuLink"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Séries
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Acteur 1</a>
-                        <a class="dropdown-item" href="#">Acteur 2</a>
-                        <a class="dropdown-item" href="#">Acteur 3</a>
-                    </div>
+                    <a class="nav-link text-light" href="/programs/">Séries</a>
                 </li>
-                <li class="nav-item dropdown mr-5">
-                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Acteurs
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Acteur 1</a>
-                        <a class="dropdown-item" href="#">Acteur 2</a>
-                        <a class="dropdown-item" href="#">Acteur 3</a>
-                    </div>
+                {% if app.user %}
+                <li class="nav-item mr-5 text-light pt-2">
+                    {{ app.user.email }}
+                    <a style="color: white" href="{{ path('app_logout') }}"> Se déconnecter</a>
                 </li>
+                    {% else %}
+                <li class="nav-item mr-5 text-light pt-2">
+                    <a style="color: white" href="{{ path('app_login') }}"> Se connecter</a>
+                </li>
+                {% endif %}
             </ul>
         </div>
     </nav>
 </div>
+

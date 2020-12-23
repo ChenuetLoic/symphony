@@ -1,4 +1,19 @@
 {% extends 'base.html.twig' %}
 {% block body %}
     <h1>Bienvenu</h1>
+    {% if app.user %}
+        <ul>
+            <li>
+                <a href="/episode">Ajouté un nouvelle épisode</a>
+            </li>
+            <li>
+                <a href="/programs/new">Ajouté un nouvelle série</a>
+            </li>
+            <li>
+                <a href="/season">Ajouté un nouvelle saison</a>
+            </li>
+        </ul>
+
+    {% else %}
+    {% endif %}
 {% endblock %}

@@ -2,14 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66a281b3-a916-448e-97cb-c8966b6f8bc4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/episode/newEpisodeEmail.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/program/newProgramEmail.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Comment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/CommentType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/CommentRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fb8279da-ed96-4b81-84c9-3727daa01d81.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fb8279da-ed96-4b81-84c9-3727daa01d81.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/EpisodeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/EpisodeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201201202948.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201201203131.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201202103133.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201202103328.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201214082430.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201216094231.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201216102440.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20201223094033.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ProgramController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProgramController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Episode.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Episode.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/_navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_navbar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/program/episode_show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/program/episode_show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +170,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/projet/orleans-php-202009-project-coachsportif" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -210,7 +224,12 @@
       <workItem from="1607932633618" duration="9598000" />
       <workItem from="1607944133275" duration="4859000" />
       <workItem from="1608109950074" duration="10227000" />
-      <workItem from="1608218880977" duration="4311000" />
+      <workItem from="1608218880977" duration="5219000" />
+      <workItem from="1608290261121" duration="2448000" />
+      <workItem from="1608296169845" duration="145000" />
+      <workItem from="1608296444040" duration="715000" />
+      <workItem from="1608299857416" duration="657000" />
+      <workItem from="1608710908192" duration="9089000" />
     </task>
     <servers />
   </component>
