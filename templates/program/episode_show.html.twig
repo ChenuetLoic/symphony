@@ -11,18 +11,35 @@
         <h3> Commentaires : </h3>
         <ul>
             {% for comment in episodes.comments %}
-                <li>De : {{ comment.author.email }} <br>
-                    Note : {{ comment.rate }} <br>
-                    Commentaire : {{ comment.comment }}
-                </li>
+                <div class="card m-3 p-3 bg-light card-body border-primary">
+                    <h5 class="card-title">{{ comment.author.username }}</h5>
+                    <p class="card-subtitle font-weight-bold">Cet utilisateur a mis la note de {{ comment.rate }}</p>
+                    <p class="pl-3 font-italic card-text">{{ comment.comment }}</p>
+                    {% if is_granted("ROLE_ADMIN") or app.user == comment.author %}
+                        <div class="text-right">
+                            {{ include('program/_deleteComment_form.html.twig') }}
+                        </div>
+                    {% endif %}
+                </div>
+            {% else %}
+                <p>Pas encore de commentaires sur cet épisode</p>
             {% endfor %}
-        </ul>
-        {% if app.user %}
-        <h3>Ajouter un commentaire</h3>
-        {{ include('episode/_form.html.twig') }}
-        <a class="btn btn-dark m-2"
-           href="{{ path("program_showSeason", { program: program.id , season: season.id }) }}">Retour à la liste des
-            épisodes</a>
+
     </div>
-    {% endif %}
-{% endblock %}
+
+
+{% if app.user %}
+    <div class="mx-5">
+        <h4 class="my-3">Ajouter un commentaire</h4>
+        <div class="container">
+            {{ form_start(form) }}
+            {{ form_widget(form) }}
+            <div class="text-center">
+                <input type='submit' class="btn btn-primary" value='Ajouter un commentaire'>
+            </div>
+            {{ form_end(form) }}
+        </div>
+    </div>
+{% endif %}
+
+    {% endblock %}

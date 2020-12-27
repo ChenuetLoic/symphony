@@ -4,6 +4,9 @@
     <h1>Toutes les séries:</h1>
     {% for program in programs %}
         <div>
+            {% if is_granted("ROLE_ADMIN") %}
+                <a class="btn btn-dark m-2" href="{{ path('program_edit', { 'slug': program.slug} ) }}">Éditer</a>
+            {%endif%}
             <a href="{{ path("program_show", { slug: program.slug }) }}"><h2>{{ loop.index }}
                     / {{ program.title }} - Catégorie : {{ program.category.name }}</h2></a>
             <p>{{ program.summary }}</p>
@@ -11,6 +14,7 @@
     {% else %}
         Aucune série trouvée.
     {% endfor %}
+
 
     <a class="btn btn-dark m-2" href="{{ path('app_index') }}">Retour à l'accueil</a>
 {% endblock %}
