@@ -2,6 +2,10 @@
 {% block title %}{{ parent() }} | Programs{% endblock %}
 {% block body %}
     <h1>Toutes les séries:</h1>
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <button>Search</button>
+    {{ form_end(form) }}
     {% for program in programs %}
         <div>
             {% if is_granted("ROLE_ADMIN") %}
@@ -14,7 +18,5 @@
     {% else %}
         Aucune série trouvée.
     {% endfor %}
-
-
     <a class="btn btn-dark m-2" href="{{ path('app_index') }}">Retour à l'accueil</a>
 {% endblock %}
