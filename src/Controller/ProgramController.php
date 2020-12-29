@@ -8,6 +8,7 @@ use App\Entity\Program;
 use App\Entity\Season;
 use App\Form\CommentType;
 use App\Form\ProgramType;
+use App\Form\SearchProgramFormType;
 use App\Repository\ProgramRepository;
 use App\Service\Slugify;;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
@@ -34,6 +35,7 @@ class ProgramController extends AbstractController
      * @param Slugify $slugify
      * @param MailerInterface $mailer
      * @return Response
+     * @throws \Symfony\Component\Mailer\Exception\TransportExceptionInterface
      */
     public function new(Request $request, Slugify $slugify, MailerInterface  $mailer) : Response
     {
@@ -66,15 +68,26 @@ class ProgramController extends AbstractController
     /**
      * Correspond à la route /programs/ et au name "program_index"
      * @Route("/", name="index")
+     * @param Request $request
+     * @param ProgramRepository $programRepository
      * @return Response A response instance
      */
-    public function index(): Response
+    public function index(Request $request, ProgramRepository $programRepository): Response
     {
-        $programs = $this->getDoctrine()
-            ->getRepository(Program::class)
-            ->findAll();
+        $form = $this->createForm(SearchProgramFormType::class);
+        $form->handleRequest($request);
 
-        return $this->render('program/index.html.twig', ['programs' => $programs]);
+        if ($form->isSubmitted() && $form->isValid()) {
+            $search = $form->getData()['search'];
+            $programs = $programRepository->findBy(['title' => $search]);
+        } else {
+            $programs = $programRepository->findAll();
+        }
+
+        return $this->render('program/index.html.twig', [
+            'programs' => $programs,
+            'form' => $form->createView(),
+        ]);
     }
 
     /**
@@ -82,7 +95,6 @@ class ProgramController extends AbstractController
      * @param Program $program
      * @return Response
      */
-
     public function show(Program $program): Response
     {
         return $this->render('program/show.html.twig', ['program'=>$program]);
