@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="66a281b3-a916-448e-97cb-c8966b6f8bc4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/EpisodeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/EpisodeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ProgramController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProgramController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/SearchProgramFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/SearchProgramType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/ProgramRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ProgramRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/program/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/program/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +218,9 @@
       <workItem from="1608710908192" duration="13937000" />
       <workItem from="1608734727361" duration="627000" />
       <workItem from="1609099327825" duration="4599000" />
-      <workItem from="1609242184027" duration="4500000" />
+      <workItem from="1609242184027" duration="4811000" />
+      <workItem from="1609357622152" duration="40000" />
+      <workItem from="1609360730995" duration="1146000" />
     </task>
     <servers />
   </component>

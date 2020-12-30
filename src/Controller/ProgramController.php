@@ -52,7 +52,7 @@ class ProgramController extends AbstractController
             $program->setOwner($this->getUser());
             $entityManager->persist($program);
             $entityManager->flush();
-
+            $this->addFlash('success', 'La nouvelle série a bien été créer');
             $email = (new Email())
                 ->from($this->getParameter('mailer_from'))
                 ->to('your_email@example.com')

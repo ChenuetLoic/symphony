@@ -40,3 +40,6 @@ https://www.loom.com/share/9a41c5853243464f88659701c4efe58a
 
 Quêtes 22
 https://www.loom.com/share/8f2a030baa4245078ad8d12b08277243
+
+Quêtes 23
+https://www.loom.com/share/40a65a6025874c76909d3f73f39a459b
