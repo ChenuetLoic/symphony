@@ -9,6 +9,11 @@
                 <p class="w-75">{{ program.synopsis }}</p>
                 <p>Category : {{ program.category.name }}</p>
                 <p>Saison disponible : </p>
+                {% if app.user %}
+                    <a id="watchlist">
+                        <i id="watchlistIcon" class="{{ app.user.isInWatchlist(program) ? 'fas' : 'far' }} fa-heart watchlist" data-href="{{ path("program_watchlist", { id: program.id}) }}"></i>
+                    </a>
+                {% endif %}
                 <ul>
                     {% for season in program.seasons %}
                     <li>
@@ -35,4 +40,8 @@
         </div>
         <a class="btn btn-dark m-2" href="{{ path('program_index') }}">Retour a la liste des séries</a>
     </div>
+{% endblock %}
+{% block javascripts %}
+    {{ encore_entry_script_tags('watchlist') }}
+    {{ parent() }}
 {% endblock %}

@@ -43,3 +43,6 @@ https://www.loom.com/share/8f2a030baa4245078ad8d12b08277243
 
 Quêtes 23
 https://www.loom.com/share/40a65a6025874c76909d3f73f39a459b
+
+Quêtes 23
+https://www.loom.com/share/5ef24f655c8041a19f22607bc098d18b

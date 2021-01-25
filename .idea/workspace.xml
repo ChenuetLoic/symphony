@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66a281b3-a916-448e-97cb-c8966b6f8bc4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/watchlist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20210125135222.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fb8279da-ed96-4b81-84c9-3727daa01d81.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fb8279da-ed96-4b81-84c9-3727daa01d81.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/wild-series.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wild-series.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/EpisodeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/EpisodeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201229121815.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201229122216.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20210125135622.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ProgramController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProgramController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/program/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/program/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/program/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/program/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +29,13 @@
     <execution>
       <executable path="composer" />
     </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -220,7 +238,22 @@
       <workItem from="1609099327825" duration="4599000" />
       <workItem from="1609242184027" duration="4811000" />
       <workItem from="1609357622152" duration="40000" />
-      <workItem from="1609360730995" duration="1146000" />
+      <workItem from="1609360730995" duration="1351000" />
+      <workItem from="1609607181606" duration="608000" />
+      <workItem from="1609613579197" duration="4190000" />
+      <workItem from="1609746426371" duration="1033000" />
+      <workItem from="1609750919299" duration="638000" />
+      <workItem from="1609756656361" duration="640000" />
+      <workItem from="1609766276869" duration="377000" />
+      <workItem from="1609769167181" duration="649000" />
+      <workItem from="1609926857715" duration="265000" />
+      <workItem from="1609948909856" duration="733000" />
+      <workItem from="1610006391504" duration="35000" />
+      <workItem from="1610007063065" duration="17000" />
+      <workItem from="1610463424524" duration="472000" />
+      <workItem from="1610976108714" duration="388000" />
+      <workItem from="1610976661855" duration="826000" />
+      <workItem from="1611582333041" duration="2282000" />
     </task>
     <servers />
   </component>
