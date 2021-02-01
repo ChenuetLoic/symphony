@@ -1,0 +1,14 @@
+welcome: Welcome
+Catégories: Categories
+Séries: Programs
+language: Language
+account.logout: Account logout
+'Retour à l''accueil': Back to home
+'Ajouté un nouvelle épisode': Added a new episode
+'Ajouté un nouvelle série': Added a new series
+'Ajouté un nouvelle saison': Added a new season
+account:
+  sign_in: Sign In
+  register: Create Account
+
+

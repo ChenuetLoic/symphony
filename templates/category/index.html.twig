@@ -4,11 +4,12 @@
     <h1>Toutes les catégories : </h1>
     {% for category in categories %}
         <div>
-            <a href="{{ path("category_show", { categoryName: category.name }) }}"><h2>{{ loop.index }} . {{ category.name }}</h2></a>
+            <a href="{{ path("category_show", { categoryName: category.name }) }}"><h2>
+                    {{ loop.index }} . {{ category.name }}</h2></a>
         </div>
     {% else %}
         Aucune série trouvée.
     {% endfor %}
 
-    <a class="btn btn-dark m-2" href="{{ path('app_index') }}">Retour à l'accueil</a>
+    <a class="btn btn-dark m-2" href="{{ path('app_index') }}">{{"Retour à l'accueil"|trans}}</a>
 {% endblock %}
