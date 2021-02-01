@@ -1,10 +1,15 @@
 <div class="fixed-top">
     <nav class="navbar navbar-expand-md navbar-dark bg-primary spacenav">
-        <a class="navbar-brand d-none d-lg-block" href="/">Wild Series</a>
+        <a class="navbar-brand d-none d-lg-block" href="{{ path('app_index') }}">Wild Series</a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto ">
-                <li class="nav-item mr-5">
-                    <a class="nav-link text-light" href="{{ path('category_index') }}">{{'Catégories'|trans}}</a>
+                <li class="nav-item dropdown mr-5">
+                    <a class="nav-link dropdown-toggle text-secondary" href="{{ path('app_index', {'_locale': 'fr'}) }}"
+                       id="translateDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false"><span class="flag-icon flag-icon-fr"> </span>{{ 'Catégories'|trans }}</a>
+                    <div class="dropdown-menu" aria-labelledby="translateDropdown">
+                        {{ render(controller('App\\Controller\\DefaultController::navbarTop')) }}
+                    </div>
                 </li>
                 <li class="nav-item dropdown mr-5">
                     <a class="nav-link text-light" href="{{ path('program_index') }}">{{'Séries'|trans}}</a>
