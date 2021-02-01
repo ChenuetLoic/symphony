@@ -1,16 +1,16 @@
 {% extends 'base.html.twig' %}
 {% block body %}
-    <h1>Bienvenu</h1>
+    <h1>{{'welcome'|trans}}</h1>
     {% if app.user %}
         <ul>
             <li>
-                <a href="/episode">Ajouté un nouvelle épisode</a>
+                <a href="{{ path('episode_new') }}">{{"Ajouté un nouvelle épisode"|trans}}</a>
             </li>
             <li>
-                <a href="/programs/new">Ajouté un nouvelle série</a>
+                <a href="{{ path('program_new') }}">{{"Ajouté un nouvelle série"|trans}}</a>
             </li>
             <li>
-                <a href="/season">Ajouté un nouvelle saison</a>
+                <a href="{{ ('season_new') }}">{{"Ajouté un nouvelle saison"|trans}}</a>
             </li>
         </ul>
 
