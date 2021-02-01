@@ -49,3 +49,6 @@ https://www.loom.com/share/5ef24f655c8041a19f22607bc098d18b
 
 Quêtes 25
 https://www.loom.com/share/d03fe82360734a3faba903e22241f3f8
+
+Quêtes 26
+https://www.loom.com/share/bcab6b2247ab4148b033398644d5b4e4
