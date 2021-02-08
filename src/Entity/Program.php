@@ -22,14 +22,14 @@ class Program
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      */
-    private $id;
+    private ?int $id;
 
     /**
      * @ORM\Column(type="string", length=255)
      * @Assert\NotBlank(message="ne me laisse pas tout vide")
      * @Assert\Length(max="255", maxMessage="La catégorie saisie {{ value }} est trop longue, elle ne devrait pas dépasser {{ limit }} caractères")
      */
-    private $title;
+    private ?string $title;
 
     /**
      * @ORM\Column(type="text")
@@ -40,53 +40,53 @@ class Program
      *     message="On parle de vraies séries ici"
      * )
      */
-    private $summary;
+    private ?string $summary;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $poster;
+    private ?string $poster;
 
     /**
      * @ORM\ManyToOne(targetEntity=Category::class, inversedBy="programs")
      * @ORM\JoinColumn(nullable=false)
      */
-    private $category;
+    private ?Category $category;
 
     /**
      * @ORM\Column(type="text", nullable=false)
      */
-    private $synopsis;
+    private ?string $synopsis;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $country;
+    private ?string $country;
 
     /**
      * @ORM\Column(type="integer")
      */
-    private $year;
+    private ?int $year;
 
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\Season", mappedBy="program")
      */
-    private $seasons;
+    private Collection $seasons;
 
     /**
      * @ORM\ManyToMany(targetEntity=Actor::class, mappedBy="programs")
      */
-    private $actors;
+    private Collection $actors;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $slug;
+    private ?string $slug;
 
     /**
      * @ORM\ManyToOne(targetEntity=User::class)
      */
-    private $owner;
+    private ?User $owner;
 
 
     public function __construct()

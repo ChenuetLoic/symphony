@@ -3,12 +3,19 @@
 namespace App\Entity;
 
 use App\Repository\ActorRepository;
+use DateTime;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * @ORM\Entity(repositoryClass=ActorRepository::class)
+ * @Vich\Uploadable
  */
 class Actor
 {
@@ -17,17 +24,62 @@ class Actor
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      */
-    private $id;
+    private ?int $id;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $name;
+    private ?string $name;
+
+    /**
+     * @ORM\Column(type="text")
+     */
+    private ?string $path = '';
 
     /**
      * @ORM\ManyToMany(targetEntity=Program::class, inversedBy="actors")
      */
-    private $programs;
+    private Collection $programs;
+
+    /**
+     * @ORM\Column(type="datetime", nullable=true)
+     */
+    private ?\DateTimeInterface $updatedAt;
+
+    /**
+     * @Vich\UploadableField(mapping="path_file", fileNameProperty="path")
+     * @var File|null
+     * @Assert\File(
+     *     maxSize="1000000",
+     *     mimeTypes = {"image/png", "image/jpeg", "image/jpg", "image/gif",})
+     */
+    private ?File $pathFile = null;
+
+    public function setPathFile(?File $image = null): Actor
+    {
+        $this->pathFile = $image;
+        if ($image) {
+            $this->updatedAt = new DateTime('now');
+        }
+        return $this;
+    }
+
+    public function getPathFile(): ?File
+    {
+        return $this->pathFile;
+    }
+
+    public function getUpdatedAt(): ?\DateTimeInterface
+    {
+        return $this->updatedAt;
+    }
+
+    public function setUpdatedAt(?\DateTimeInterface $updatedAt): self
+    {
+        $this->updatedAt = $updatedAt;
+
+        return $this;
+    }
 
     public function __construct()
     {
@@ -73,5 +125,15 @@ class Actor
         $this->programs->removeElement($program);
 
         return $this;
+    }
+
+    public function getPath(): ?string
+    {
+        return $this->path;
+    }
+
+    public function setPath(?string $path): void
+    {
+        $this->path = $path;
     }
 }
