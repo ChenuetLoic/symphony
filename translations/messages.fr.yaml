@@ -1,0 +1,11 @@
+welcome: Bienvenue
+account.sign_in: 'Se connecter'
+account.register: 'Créer un compte'
+account.logout: 'Se déconnecter'
+Catégories: Catégories
+Séries: Séries
+language: Language
+'Retour à l''accueil': '__Retour à l''accueil'
+'Ajouté un nouvelle épisode': 'Ajouté un nouvelle épisode'
+'Ajouté un nouvelle série': 'Ajouté un nouvelle série'
+'Ajouté un nouvelle saison': 'Ajouté un nouvelle saison'

@@ -44,8 +44,14 @@ https://www.loom.com/share/8f2a030baa4245078ad8d12b08277243
 Quêtes 23
 https://www.loom.com/share/40a65a6025874c76909d3f73f39a459b
 
-Quêtes 23
+Quêtes 24
 https://www.loom.com/share/5ef24f655c8041a19f22607bc098d18b
+
+Quêtes 25
+https://www.loom.com/share/d03fe82360734a3faba903e22241f3f8
+
+Quêtes 26
+https://www.loom.com/share/bcab6b2247ab4148b033398644d5b4e4
 
 Quêtes 27
 https://www.loom.com/share/d44a37dead8e4b7990afa433fa748aac
