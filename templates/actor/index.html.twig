@@ -20,7 +20,7 @@
             <tr>
                 <td>{{ actor.id }}</td>
                 <td>{{ actor.name }}</td>
-                <td>{{ actor.path }}</td>
+                <td><img src="{{ asset('uploads/path/' ~ actor.path) }}" alt=""></td>
                 <td>{{ actor.updatedAt ? actor.updatedAt|date('Y-m-d H:i:s') : '' }}</td>
                 <td>
                     <a href="{{ path('actor_show', {'id': actor.id}) }}">show</a>
